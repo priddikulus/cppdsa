@@ -12,6 +12,13 @@ int peakIndexInMountainArray(vector<int>& arr);
 int getPivot(int arr[], int n);
 long long sqrtInteger (int n);
 
+void sortExamples();
+
 //Selection Sort
-void selectSortExamples();
 void selectionSort (vector<int> &a);
+
+//Bubble Sort
+void bubbleSort(vector<int> &a);
+
+//Insertion sort
+void insertionSort(vector<int> &a);
