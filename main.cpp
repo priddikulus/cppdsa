@@ -2,4 +2,6 @@
 
 int main() {
   binSearchExamples();
+  cout<<endl;
+  selectSortExamples();
 }

@@ -34,6 +34,10 @@ void binSearchExamples()
 
   int arr7[] = {77,88,99,22,33,44,55,66,70};
   cout<<"Index of pivot in arr7 is "<<getPivot(arr7, 9)<<endl;
+  cout<<endl;
+  
+  int n = 2147395599;
+  cout<<"Square root of "<<n<<" is "<<sqrtInteger(n)<<endl;
 
 }
 
@@ -152,5 +156,29 @@ int getPivot(int arr[], int n)
   
 }
 
-//33. Search in Rotated Sorted Array
+//Leetcode 33. Search in Rotated Sorted Array - implementation done in LC portal
+//Square root
+
+long long sqrtInteger (int n)
+{
+  int s = 0;
+  int e = n;
+  long long mid = s + (e - s)/2;
+  long long ans = -1;
+
+  while (s <= e) {
+    long long sq = mid * mid;
+    if (sq == n) {
+      return mid;
+    } else if (sq < n) { //check in right
+      ans = mid;
+      s = mid + 1;
+    } else { //check in left
+      e = mid - 1;
+    }
+    mid = s + (e - s)/2;
+  }
+  return ans;
+  
+}
 
