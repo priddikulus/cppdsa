@@ -22,3 +22,10 @@ void bubbleSort(vector<int> &a);
 
 //Insertion sort
 void insertionSort(vector<int> &a);
+
+//Merge Sort
+void mergeSort(vector<int>&v, int s, int e);
+
+//Arrays
+void reverseArray(vector<int> &v);
+void revArrPostIndex(vector<int> &v, int k);
