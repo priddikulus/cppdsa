@@ -15,6 +15,7 @@ int main() {
   sortExamples();
   arrayExamples();
   linkedListOps();
+  doublyLListOps();
 }
 
 void arrayExamples()

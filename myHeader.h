@@ -33,3 +33,6 @@ void revArrPostIndex(vector<int> &v, int k);
 
 //Singly Linked List
 void linkedListOps();
+
+//Doubly linked list
+void doublyLListOps();
