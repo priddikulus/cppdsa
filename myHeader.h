@@ -27,5 +27,9 @@ void insertionSort(vector<int> &a);
 void mergeSort(vector<int>&v, int s, int e);
 
 //Arrays
+void arrayExamples();
 void reverseArray(vector<int> &v);
 void revArrPostIndex(vector<int> &v, int k);
+
+//Singly Linked List
+void linkedListOps();
