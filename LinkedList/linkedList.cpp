@@ -62,10 +62,19 @@ static Node* createList(vector<int>&v)
   return list1;
 }
 
-/*static void reverseList(Node* head)
+static Node* reverseList(Node* head)
 {
+  Node* curr = head, *prev = NULL;
+
+  while(curr != NULL) {
+    Node* next = curr->next;
+    curr->next = prev;
+    prev = curr;
+    curr = next;
+  }
+  return prev;
   
-}*/
+}
 
 static void insertAtPos(Node* &head, Node *node, int pos)
 {
@@ -143,4 +152,7 @@ void linkedListOps()
 
   deleteNodeAtPos(list, 7);
   printList(list);
+
+  Node* revList = reverseList(list);
+  printList(revList);
 }
