@@ -1,5 +1,10 @@
 #include "myHeader.h"
 
+/*
+Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+Time Complexity: O(n^2) in the worst case.
+*/
+
 void bubbleSort(vector<int> &a)
 {
   int n = a.size(), p = 0;

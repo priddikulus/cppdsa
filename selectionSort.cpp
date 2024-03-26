@@ -1,5 +1,8 @@
 #include "myHeader.h"
-
+/*
+Selection Sort sorts an array by repeatedly finding the minimum element from the unsorted part of the array and putting it at the beginning.
+Time Complexity: O(n^2) in the worst case.
+*/
 void selectionSort (vector<int> &a)
 {
   int n = a.size(), p = 0;

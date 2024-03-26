@@ -1,4 +1,9 @@
 #include "myHeader.h"
+/*
+Merge Sort is a divide-and-conquer algorithm that divides the array into halves, recursively sorts each half, and then merges the sorted halves.
+Time Complexity: O(n log n) in the worst case.
+*/
+
 
 void merge(vector<int> &v, int s, int mid, int e)
 {
